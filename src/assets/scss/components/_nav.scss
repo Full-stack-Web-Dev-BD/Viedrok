@@ -1,0 +1,187 @@
+.my-nav {
+    padding: 10px 0;
+    background-color: white;
+    font-family: "Oswald", sans-serif;
+    color: #1b81c1;
+    .logo {
+        text-align: right;
+        img {
+            max-width: 220px;
+        }
+    }
+    .menu {
+        padding: 27px 0px;
+        margin: 0;
+        display: inline-block;
+        list-style: none;
+        li {
+            float: left;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 0 30px;
+            position: relative;
+            span::before {
+                content: "";
+                width: 2px;
+                height: 30px;
+                background: #00000066;
+                position: absolute;
+                left: 0;
+                top: 0px;
+            }
+        }
+        li:nth-child(3) {
+            font-weight: 400;
+        }
+        li:nth-child(3)::after {
+            content: "";
+            width: 2px;
+            height: 30px;
+            background: #00000066;
+            position: absolute;
+            right: 0;
+            top: 0px;
+        }
+    }
+    .power {
+        margin: 0;
+        padding: 23px 0;
+        list-style: none;
+        display: inline-block;
+        li {
+            font-weight: 600;
+            font-size: 18px;
+            float: left;
+            margin: 0 10px;
+            a {
+                font-weight: 400;
+            }
+            i {
+                font-size: 20px;
+            }
+            span {
+                width: 30px;
+                display: inline-block;
+                height: 30px;
+                background: #ff106a;
+                position: relative;
+                color: white;
+                border-radius: 5px;
+                i {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
+
+// responsive
+.my-nav {
+    /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+    @media (min-width: 1281px) {
+        /* CSS */
+    }
+
+    /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+        /* CSS */
+    }
+
+    /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        /* CSS */
+        .logo {
+            img {
+                width: 140px;
+            }
+        }
+        .menu {
+            li {
+                font-size: 16px;
+                padding: 0 10px;
+            }
+        }
+        .power {
+            // padding-right: 15px;
+            // text-align: center;
+            li {
+                font-size: 14px;
+            }
+            // li:nth-child(1) {
+            //     width: 100%;
+            //     margin-right: 10px;
+            // }
+        }
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        /* CSS */
+
+        .logo {
+            text-align: center;
+            img {
+                width: 140px;
+            }
+        }
+
+        .menu {
+            li {
+                font-size: 16px;
+                padding: 0 10px;
+            }
+        }
+    }
+
+    /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        /* CSS */
+        .logo {
+            text-align: center;
+            img {
+                width: 140px;
+            }
+        }
+
+        .menu {
+            li {
+                font-size: 16px;
+                padding: 0 10px;
+                text-align: center;
+                width: 100%;
+                .bar::after {
+                    background-color: transparent;
+                    display: none;
+                }
+                .bar::before {
+                    background-color: transparent;
+                }
+            }
+            li::nth-child(3) {
+                display: none;
+            }
+        }
+
+        .power {
+            padding: 0;
+        }
+    }
+}
