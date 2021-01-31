@@ -148,6 +148,35 @@
                     top: 50%;
                     background-color: transparent;
                 }
+                .my-progress-bar {
+                    padding: 0 40px;
+                    position: absolute;
+                    width: 100%;
+                    bottom: 30px;
+                    z-index: 99;
+                    .inner-bar {
+                        position: relative;
+                        background: linear-gradient(to right, #ff0098, #04d7fd);
+                        padding: 4px;
+                        border-radius: 30px;
+                        .bar-content {
+                            background: linear-gradient(to right, #ce61a2, #77dff1);
+                            border-radius: 30px;
+                            .text-content {
+                                padding-left: 10px;
+                                border-radius: 30px;
+                                background-color: #001a44;
+                                p {
+                                    color: #11cbf9;
+                                    font-size: 9px;
+                                    margin: 0;
+                                    line-height: 1;
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

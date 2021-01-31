@@ -70,6 +70,15 @@ const IndexPage = () => {
                                         <img className="my-card-bg" src='/images/endless_siege_file_bg@2x.png' />
                                         <h5 className="txt-1">Puzzle</h5>
                                         <h4 className="development-message">Currently under development</h4>
+                                        <div className="my-progress-bar">
+                                            <div className="inner-bar">
+                                                <div className="bar-content">
+                                                    <div className="text-content" style={{ width: '30%' }}>
+                                                        <p>PROGRESS</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
