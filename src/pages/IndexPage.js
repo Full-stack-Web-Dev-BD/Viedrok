@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from '../components/Nav'
-
+import MyChart from '../components/MyChart'
 const IndexPage = () => {
     return (
         <div className="index-page">
@@ -86,6 +86,7 @@ const IndexPage = () => {
                     </div>
                 </div>
             </div>
+            <MyChart />
         </div>
     )
 }
