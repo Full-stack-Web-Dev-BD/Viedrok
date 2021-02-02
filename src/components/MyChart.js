@@ -6,8 +6,23 @@ class BarChart extends Component {
 
         var options = {
             chart: {
-                height: 280,
-                type: "area"
+                height: 380,
+                type: "area",
+                background: '#001A44'
+            },
+
+            colors: ['#ff0098'],
+            labels: ['white'],
+            stroke: {
+                // show: false,
+                // curve: 'smooth',
+                // lineCap: 'butt',
+                // colors: undefined,
+                // width: 2,
+                // dashArray: 0,
+            },
+            grid: {
+                show: false
             },
             dataLabels: {
                 enabled: false
@@ -15,7 +30,7 @@ class BarChart extends Component {
             series: [
                 {
                     name: "Series 1",
-                    data: [45, 52, 38, 45, 19, 23, 2]
+                    data: [45, 52, 38, 45, 19, 23, 2, 52, 38, 45, 19, 23, 2, 52, 38, 45]
                 }
             ],
             fill: {
@@ -29,13 +44,7 @@ class BarChart extends Component {
             },
             xaxis: {
                 categories: [
-                    "01 Jan",
-                    "02 Jan",
-                    "03 Jan",
-                    "04 Jan",
-                    "05 Jan",
-                    "06 Jan",
-                    "07 Jan"
+                    12, 3, 1, 4, 13, 4, 1, 3, 42, 41, 41, 5, 35, 67, 63, 24
                 ]
             }
         };
@@ -49,7 +58,7 @@ class BarChart extends Component {
                             series={options.series}
                             type="area"
                             width="100%"
-                            height="200"
+                            height="280"
                         />
                     </div>
                 </div>

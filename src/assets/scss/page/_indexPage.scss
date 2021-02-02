@@ -9,6 +9,7 @@
             -moz-box-shadow: inset 0px 300px 55px -40px #0b2347d8;
             box-shadow: inset 0px 300px 55px -40px #0b2347d8;
             padding-top: 50px;
+            padding-bottom: 30px;
             background-image: url("../../images/clashdome_backrgound@2x.png");
             background-size: cover;
             background-position: center;
@@ -34,7 +35,7 @@
             h4 {
                 color: #11cbf9;
                 background: #001a44;
-                padding: 16px 0;
+                padding: 16px 20px;
                 border-radius: 15px;
             }
         }
@@ -175,6 +176,62 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+    .chart-area {
+        background: #001a44;
+        .chart-content {
+            padding: 60px 0;
+            h1 {
+                color: white;
+                font-size: 34px;
+            }
+            .border-bt {
+                background: linear-gradient(to right, #ff0099, #77dff1);
+                width: 100%;
+                height: 4px;
+            }
+            .my-chart {
+                position: relative;
+                .my-chart-inner-text {
+                    position: absolute;
+                    top: 60px;
+                    left: 50%;
+                    z-index: 999;
+                    transform: translate(-50%);
+                    text-transform: uppercase;
+                    text-align: center;
+                    h2 {
+                        color: #ffffff;
+                        font-size: 34px;
+                    }
+                    h3 {
+                        color: #ffff4e;
+                        font-size: 38px;
+                    }
+                }
+            }
+            .blockchain-card {
+                text-align: center;
+                h2 {
+                    color: white;
+                    font-size: 24px;
+                    text-align: center;
+                    margin: 0 0 22px 0;
+                }
+                img {
+                    max-width: 40%;
+                }
+                p {
+                    color: #11cbf9;
+                    font-size: 26px;
+                    font-weight: 100;
+                    margin-top: 40px;
+                    a {
+                        color: #11cbf9;
                     }
                 }
             }

@@ -18,7 +18,7 @@ const IndexPage = () => {
                         <h4>Are you skillful enough to multiply your cryptocash? Test yourself and compete in our async game competitions.</h4>
                         <div className=" card-container">
                             <div className="row">
-                                <div className="col-md-4 ">
+                                <div className="col-md-4 mt-5 ">
                                     <div className="my-card">
                                         <img className="top-img" src="/images/endless_siege_title_file@2x.png" />
                                         <img className="my-card-bg" src='/images/endless_siege_file_bg@2x.png' />
@@ -27,10 +27,10 @@ const IndexPage = () => {
                                         <div className="price-pot">
                                             <p className="pot-title">PRIZE POT</p>
                                             <div className="row price-pot-details">
-                                                <div className="col-md-8 col-sm-12 price">
+                                                <div className="col-md-7 price">
                                                     <h1>1,200</h1>
                                                 </div>
-                                                <div className="col-md-4 col-sm-12 token-info">
+                                                <div className="col-md-5  token-info">
                                                     <p className="first-cp">WAX Tokens</p>
                                                     <p>(23.72 US $)</p>
                                                 </div>
@@ -41,7 +41,7 @@ const IndexPage = () => {
                                         <img className="i-button" src="/images/i-button.png" />
                                     </div>
                                 </div>
-                                <div className="col-md-4 ">
+                                <div className="col-md-4 mt-5 ">
                                     <div className="my-card card-2">
                                         <img className="top-img" src="/images/candy_fiesta_title_file@2x.png" />
                                         <img className="my-card-bg" src='/images/endless_siege_file_bg@2x.png' />
@@ -64,7 +64,7 @@ const IndexPage = () => {
                                         <img className="i-button" src="/images/i-button.png" />
                                     </div>
                                 </div>
-                                <div className="col-md-4 ">
+                                <div className="col-md-4 mt-5">
                                     <div className="my-card card-3">
                                         <img className="top-img" src="/images/endless_siege_title_file@2x.png" />
                                         <img className="my-card-bg" src='/images/endless_siege_file_bg@2x.png' />
@@ -73,7 +73,7 @@ const IndexPage = () => {
                                         <div className="my-progress-bar">
                                             <div className="inner-bar">
                                                 <div className="bar-content">
-                                                    <div className="text-content" style={{ width: '30%' }}>
+                                                    <div className="text-content" style={{ width: '50%' }}>
                                                         <p>PROGRESS</p>
                                                     </div>
                                                 </div>
@@ -86,7 +86,50 @@ const IndexPage = () => {
                     </div>
                 </div>
             </div>
-            <MyChart />
+            <div className="chart-area">
+                <div className="chart-content">
+                    <div className="container">
+                        <div className="title">
+                            <h1>GAMES & PRIZES</h1>
+                            <div className="border-bt"></div>
+                        </div>
+                        <div className="my-chart">
+                            <div className="my-chart-inner-text">
+                                <h2>Previous 30 Days Pots</h2>
+                                <h3>15,000 waxp</h3>
+                            </div>
+                            <MyChart />
+                        </div>
+
+                        <div className="title">
+                            <h1>NEW TO BLOCKCHAIN GAMES?</h1>
+                            <div className="border-bt"></div>
+                        </div>
+                        <div className="row mt-5">
+                            <div className="col-md-3 blockchain-card">
+                                <h2>SECURE TRANSACTIONS</h2>
+                                <img src="/images/icon_blockchain@2x.png" />
+                                <p>Reliable payments are guaranteed thanks to our transparent <a href="#">smart contracts.</a></p>
+                            </div>
+                            <div className="col-md-3 blockchain-card">
+                                <h2>CREATE YOUR ACCOUNT</h2>
+                                <img src="/images/token-small@2x.png" />
+                                <p>Create a WAX Cloud Wallet in 1 minute <a href="#">here</a> . You can also play using an Anchor wallet.</p>
+                            </div>
+                            <div className="col-md-3 blockchain-card">
+                                <h2>ADD SOME FUNDS</h2>
+                                <img src="/images/icon_funds@2x.png" />
+                                <p>Add some funds to start competing. Just visit <a href="#">Cryptolocally.</a></p>
+                            </div>
+                            <div className="col-md-3 blockchain-card">
+                                <h2>TRANSPARENT COMPETITION</h2>
+                                <img src="/images/icon_replays@2x.png" />
+                                <p>You can watch your rival’s replays to master their tricks and overcome them.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
