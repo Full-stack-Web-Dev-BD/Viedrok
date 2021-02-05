@@ -4,16 +4,21 @@
     box-sizing: border-box;
     .play-to-earn {
         .play-to-earn-contant {
+            height: 1000px;
+            overflow: scroll;
+
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+
             text-align: center;
             -webkit-box-shadow: inset 0px 300px 55px -40px #0b2347e7;
             -moz-box-shadow: inset 0px 300px 55px -40px #0b2347d8;
             box-shadow: inset 0px 300px 55px -40px #0b2347d8;
             padding-top: 50px;
-            padding-bottom: 30px;
             background-image: url("../../images/clashdome_backrgound@2x.png");
             background-size: cover;
             background-position: center;
-            h1 {
+            .txt-header {
                 font-size: 70px;
                 text-align: center;
                 color: white;
@@ -27,6 +32,11 @@
                 .wax-content {
                     color: white;
                     display: flex;
+                    h2 {
+                        text-shadow: 2px 2px gray;
+                        letter-spacing: 2px;
+                        font-weight: 300;
+                    }
                     img {
                         width: 200px;
                     }
@@ -182,17 +192,24 @@
         }
     }
     .chart-area {
-        background: #001a44;
+        background: transparent;
+
+        .apexcharts-toolbar {
+            display: none;
+        }
         .chart-content {
             padding: 60px 0;
             h1 {
                 color: white;
                 font-size: 34px;
+                text-align: left;
+                padding-left: 15px;
             }
             .border-bt {
                 background: linear-gradient(to right, #ff0099, #77dff1);
                 width: 100%;
                 height: 4px;
+                margin-bottom: 20px;
             }
             .my-chart {
                 position: relative;
@@ -206,10 +223,16 @@
                     text-align: center;
                     h2 {
                         color: #ffffff;
+                        text-shadow: 2px 2px gray;
+                        letter-spacing: 2px;
+                        font-weight: 300;
                         font-size: 34px;
                     }
                     h3 {
                         color: #ffff4e;
+                        text-shadow: 2px 2px gray;
+                        letter-spacing: 2px;
+                        font-weight: 300;
                         font-size: 38px;
                     }
                 }
@@ -217,7 +240,7 @@
             .blockchain-card {
                 text-align: center;
                 h2 {
-                    color: white;
+                    color: #11cbf9;
                     font-size: 24px;
                     text-align: center;
                     margin: 0 0 22px 0;
@@ -237,4 +260,39 @@
             }
         }
     }
+}
+
+.chart-inner {
+    padding: 40px 0;
+    border-radius: 20px;
+    background-color: #001a44;
+    opacity: 0.9;
+}
+.blockchain {
+    margin-top: 40px;
+    padding: 40px 0;
+    border-radius: 20px;
+    background-color: #001a44;
+    opacity: 0.9;
+    h1 {
+        color: white;
+    }
+}
+.play-to-earn-contant::-webkit-scrollbar {
+    display: none;
+}
+
+.overlay {
+    width: 99%;
+    background-color: transparent;
+    height: 99%;
+    position: absolute;
+    opacity: 1;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.my-card:hover .overlay {
+    background: #d4d4d4;
+    opacity: 0.3;
+    transition: 0.5s ease-in-out;
 }
