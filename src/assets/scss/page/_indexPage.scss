@@ -1,10 +1,14 @@
+.inner-content-earn {
+    padding-top: 170px;
+}
+
 .index-page {
     overflow: hidden;
     font-family: "Oswald", sans-serif;
     box-sizing: border-box;
     .play-to-earn {
         .play-to-earn-contant {
-            height: 1000px;
+            height: 964px;
             overflow: scroll;
 
             -ms-overflow-style: none; /* IE and Edge */
@@ -14,7 +18,7 @@
             -webkit-box-shadow: inset 0px 300px 55px -40px #0b2347e7;
             -moz-box-shadow: inset 0px 300px 55px -40px #0b2347d8;
             box-shadow: inset 0px 300px 55px -40px #0b2347d8;
-            padding-top: 50px;
+            // padding-top: 50px;
             background-image: url("../../images/clashdome_backrgound@2x.png");
             background-size: cover;
             background-position: center;
@@ -33,7 +37,7 @@
                     color: white;
                     display: flex;
                     h2 {
-                        text-shadow: 2px 2px gray;
+                        text-shadow: 2px 2px 5px gray;
                         letter-spacing: 2px;
                         font-weight: 300;
                     }
@@ -223,14 +227,14 @@
                     text-align: center;
                     h2 {
                         color: #ffffff;
-                        text-shadow: 2px 2px gray;
+                        text-shadow: 2px 2px 5px gray;
                         letter-spacing: 2px;
                         font-weight: 300;
                         font-size: 34px;
                     }
                     h3 {
                         color: #ffff4e;
-                        text-shadow: 2px 2px gray;
+                        text-shadow: 2px 2px 5px gray;
                         letter-spacing: 2px;
                         font-weight: 300;
                         font-size: 38px;

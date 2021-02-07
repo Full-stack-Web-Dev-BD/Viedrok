@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Nav from '../components/Nav'
 import MyChart from '../components/MyChart'
 const IndexPage = () => {
+    useEffect(() => {
+        var playToEarn = document.getElementById("playToEarn")
+        playToEarn.addEventListener('scroll', function () {
+            var header = document.getElementById("mynavbar")
+            header.classList.toggle('sticky', playToEarn.scrollTop > 50)
+            console.log(playToEarn.scrollTop)
+        })
+    }, [])
     return (
         <div className="index-page">
-            <Nav />
             <div className="play-to-earn">
-                <div className="play-to-earn-contant">
-                    <div className="container">
+                <div className="play-to-earn-contant" id="playToEarn">
+                    <Nav />
+                    <div className="container inner-content-earn">
                         <h1 className="txt-header"><span>PLAY TO EARN</span> ON 24h CRYPTO-TOURNAMENTS</h1>
                         <div className="wax">
                             <div className="wax-content">
@@ -111,7 +119,7 @@ const IndexPage = () => {
                                         <h1>NEW TO BLOCKCHAIN GAMES?</h1>
                                         <div className="border-bt"></div>
                                     </div>
-                                    <div className="row mt-5">
+                                    <div className="row pl-3  mt-5" style={{ padding: '0 30px' }}>
                                         <div className="col-md-3 blockchain-card">
                                             <h2>SECURE TRANSACTIONS</h2>
                                             <img src="/images/icon_blockchain@2x.png" />

@@ -1,4 +1,8 @@
 .my-nav {
+    position: fixed;
+    transition: 0.3s;
+    z-index: 999;
+    width: 100%;
     padding: 10px 0;
     background-color: white;
     font-family: "Oswald", sans-serif;
@@ -78,6 +82,24 @@
     }
 }
 
+.sticky {
+    padding: 0px 0;
+    .logo {
+        img {
+            max-width: 110px;
+            padding: 5px 0;
+        }
+    }
+
+    .power {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .menu {
+        padding: 10px 0px;
+    }
+}
 // responsive
 .my-nav {
     /* 

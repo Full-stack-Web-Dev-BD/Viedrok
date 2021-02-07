@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Nav = () => {
+
+    useEffect(() => {
+        var playToEarn = document.getElementById("playToEarn")
+        playToEarn.addEventListener('scroll', function () {
+            // var header = document.getElementById("mynavbar")
+            // header.classList.toggle('sticky', window.scrollY > 0)
+            // playToEarn.classList.toggle('sticky', playToEarn.scrollY > 0)
+        })
+    }, [])
     return (
-        <div className="my-nav">
+        <div id="mynavbar" className="my-nav">
             <div className="row">
                 <div className="col-xs-12 col-sm-12  col-md-3 ">
                     <div className="logo">
